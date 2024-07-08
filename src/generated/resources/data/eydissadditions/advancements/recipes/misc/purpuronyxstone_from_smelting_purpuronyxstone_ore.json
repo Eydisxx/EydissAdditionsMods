@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_purpuronyxstone_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eydissadditions:purpuronyxstone_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eydissadditions:purpuronyxstone_from_smelting_purpuronyxstone_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_purpuronyxstone_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eydissadditions:purpuronyxstone_from_smelting_purpuronyxstone_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

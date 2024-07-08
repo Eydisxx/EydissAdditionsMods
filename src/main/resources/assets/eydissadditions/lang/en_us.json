@@ -1,0 +1,14 @@
+{
+  "item.eydissadditions.purpuronyxstone": "Purpuronyxstone",
+  "item.eydissadditions.raw_purpuronyxstone": "Raw Purpuronyxstone",
+  "item.eydissadditions.metal_detector": " Metal Detector",
+  "item.eydissadditions.toolsharpeneritem": " Tool Sharpener",
+  "item.eydissadditions.dragonfruit": " Dragonfruit",
+
+  "block.eydissadditions.purpuronyxstone_ore": "Purpuronyxstone Ore",
+  "block.eydissadditions.purpuronyxstoneblock": "Block of Purpuronyxstone",
+
+  "creativetab.course_tab": "Course Tab",
+
+  "item.eydissadditions.metal_detector.no_valuables": "No Valuables Found!"
+}
