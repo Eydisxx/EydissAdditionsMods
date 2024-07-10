@@ -4,8 +4,7 @@ import net.eydis.eydissadditions.MCCourseMod;
 import net.eydis.eydissadditions.item.custom.MetalDetectorItem;
 import net.eydis.eydissadditions.item.custom.ModFoodProperties;
 import net.eydis.eydissadditions.item.custom.ToolSharpenerItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ShieldItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -33,7 +32,23 @@ public class ModItems {
     //Item 6 dragonfruit
     public static  final RegistryObject<Item> DRAGONFRUIT = ITEMS.register("dragonfruit",
             () -> new Item(new Item.Properties().food(ModFoodProperties.DRAGON_FRUIT)));
+
+    public static final RegistryObject<Item> PURPURONYXSTONE_SWORD = ITEMS.register("purpuronyxstone_sword",
+            () -> new SwordItem(ModToolTiers.PURPURONYXSTONE,2,3,new Item.Properties().durability(256)));
+
+    public static  final RegistryObject<Item> PURPURONYXSTONE_PICKAXE = ITEMS.register("purpuronyxstone_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.PURPURONYXSTONE,2,3,new Item.Properties().durability(256)));
+
+    public static  final RegistryObject<Item> PURPURONYXSTONE_AXE = ITEMS.register("purpuronyxstone_axe",
+            () -> new AxeItem(ModToolTiers.PURPURONYXSTONE,2,3,new Item.Properties().durability(256)));
+
+
+
+
+
+
     public static void register(IEventBus eventBUS) {
         ITEMS.register(eventBUS);
     }
+
 }

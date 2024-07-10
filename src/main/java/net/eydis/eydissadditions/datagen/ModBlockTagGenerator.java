@@ -2,6 +2,7 @@ package net.eydis.eydissadditions.datagen;
 
 import net.eydis.eydissadditions.MCCourseMod;
 import net.eydis.eydissadditions.block.ModBlocks;
+import net.eydis.eydissadditions.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;

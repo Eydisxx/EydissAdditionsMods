@@ -24,11 +24,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.METAL_DETECTOR.get());
                         output.accept(ModItems.TOOLSHARPENERITEM.get());
                         output.accept(ModItems.DRAGONFRUIT.get());
+                        output.accept(ModItems.PURPURONYXSTONE_SWORD.get());
+                        output.accept(ModItems.PURPURONYXSTONE_AXE.get());
+                        output.accept(ModItems.PURPURONYXSTONE_PICKAXE.get());
 
                         output.accept(ModBlocks.PURPURONYXSTONEBLOCK.get());
                         output.accept(ModBlocks.PURPURONYXSTONE_ORE.get());
                         output.accept(ModBlocks.PURPURONYXSTONE_SLAB.get());
                         output.accept(ModBlocks.PURPURONYXSTONE_STAIRS.get());
+
 
                         //output.accept(ModBlocks.CRIMSON_SHIELD.get());
 

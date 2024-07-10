@@ -20,11 +20,21 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PURPURONYXSTONE);
         simpleItem(ModItems.RAW_PURPURONYXSTONE);
         simpleItem(ModItems.DRAGONFRUIT);
+
+        handheldItem(ModItems.PURPURONYXSTONE_PICKAXE);
+        handheldItem(ModItems.PURPURONYXSTONE_AXE);
+        handheldItem(ModItems.PURPURONYXSTONE_SWORD);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item>item){
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(MCCourseMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem (RegistryObject<Item> item){
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(MCCourseMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 }
