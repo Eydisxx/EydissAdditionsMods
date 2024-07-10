@@ -33,6 +33,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                             of(ModItems.PURPURONYXSTONE.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PURPURONYXSTONE_STAIRS.get())
+                .pattern("  A")
+                .pattern(" AA")
+                .pattern("AAA")
+                .define('A', ModItems.PURPURONYXSTONE.get())
+                .unlockedBy("has_pupuronyxstone", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURPURONYXSTONE.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PURPURONYXSTONE_SLAB.get())
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("AAA")
+                .define('A', ModItems.PURPURONYXSTONE.get())
+                .unlockedBy("has_pupuronyxstone", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.PURPURONYXSTONE.get()).build()))
+                .save(pWriter);
+
+
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PURPURONYXSTONE.get(),9)
                 .requires(ModBlocks.PURPURONYXSTONEBLOCK.get())
                 .unlockedBy("has_purpuronyxstoneblock", inventoryTrigger(ItemPredicate.Builder.item().
@@ -43,6 +63,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         // "eydissadditions:raw_purpuronyxstone",null,"eydissadditions:raw_purpuronyxstoneblock",null);
         oreSmelting(pWriter, PURPURONYXSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.PURPURONYXSTONE.get(), 0.25f, 200, "purpuronyxstone");
         oreBlasting(pWriter, PURPURONYXSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.PURPURONYXSTONE.get(), 0.20f, 100, "purpuronyxstone");
+
+
+
     }
     protected static void oreSmelting(Consumer<FinishedRecipe>pFinishedRecipeConsumer, List <ItemLike>pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup) {

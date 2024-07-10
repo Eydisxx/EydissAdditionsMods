@@ -5,10 +5,7 @@ import net.eydis.eydissadditions.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,6 +24,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> PURPURONYXSTONE_ORE = registerBlock("purpuronyxstone_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3.0F, 3.0F).sound(SoundType.NETHER_GOLD_ORE), UniformInt.of(0, 1)));
+
+    public static final RegistryObject<Block> PURPURONYXSTONE_STAIRS = registerBlock("purpuronyxstone_stairs",
+            () -> new StairBlock(()->ModBlocks.PURPURONYXSTONEBLOCK.get().defaultBlockState(),
+    BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> PURPURONYXSTONE_SLAB = registerBlock("purpuronyxstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE_SLAB).sound(SoundType.METAL)));
+
 
 
 

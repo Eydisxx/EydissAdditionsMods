@@ -1,3 +1,5 @@
-// 1.20.1	2024-07-08T21:18:36.6588244	Loot Tables
+// 1.20.1	2024-07-10T18:59:45.8967451	Loot Tables
 21d4a162dae920fbb95787508ec449fb10f7e2a1 data/eydissadditions/loot_tables/blocks/purpuronyxstoneblock.json
 5c148d4261fa2751e6a47c1c202cf14575591b15 data/eydissadditions/loot_tables/blocks/purpuronyxstone_ore.json
+1bdce16d745cc8c1e3dcbc3abe9328509a90d856 data/eydissadditions/loot_tables/blocks/purpuronyxstone_slab.json
+a4801ffcf401415d9afacf715710a5b23201bcad data/eydissadditions/loot_tables/blocks/purpuronyxstone_stairs.json
