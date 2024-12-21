@@ -8,7 +8,8 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:old_growth_pine_taiga": "2024-07-09 00:02:01 +0200",
-      "minecraft:stony_shore": "2024-07-08 23:46:27 +0200"
+      "minecraft:stony_shore": "2024-07-08 23:46:27 +0200",
+      "minecraft:frozen_peaks": "2024-12-21 00:58:47 +0100"
     },
     "done": false
   },
@@ -246,18 +247,6 @@
     },
     "done": true
   },
-  "eydissadditions:recipes/misc/purpuronyxstone_stairs": {
-    "criteria": {
-      "has_pupuronyxstone": "2024-07-10 19:15:48 +0200"
-    },
-    "done": true
-  },
-  "eydissadditions:recipes/misc/purpuronyxstone_slab": {
-    "criteria": {
-      "has_pupuronyxstone": "2024-07-10 19:15:48 +0200"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/stone_bricks": {
     "criteria": {
       "has_stone": "2024-07-10 19:16:33 +0200"
@@ -387,6 +376,48 @@
   "minecraft:recipes/building_blocks/spruce_wood": {
     "criteria": {
       "has_log": "2024-07-10 21:19:28 +0200"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_crying_obsidian": {
+    "criteria": {
+      "crying_obsidian": "2024-12-21 00:26:48 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2024-12-21 00:26:48 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/respawn_anchor": {
+    "criteria": {
+      "has_obsidian": "2024-12-21 00:26:48 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2024-12-21 00:26:48 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2024-12-21 00:26:48 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bowl": {
+    "criteria": {
+      "has_brown_mushroom": "2024-12-21 00:26:54 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/mushroom_stew": {
+    "criteria": {
+      "has_brown_mushroom": "2024-12-21 00:26:54 +0100"
     },
     "done": true
   },

@@ -41,7 +41,8 @@ public class ModItems {
 
     public static  final RegistryObject<Item> PURPURONYXSTONE_AXE = ITEMS.register("purpuronyxstone_axe",
             () -> new AxeItem(ModToolTiers.PURPURONYXSTONE,2,3,new Item.Properties().durability(256)));
-
+    public static final RegistryObject<Item> CRYING_BOTTLE = ITEMS.register("crying_bottle",
+            () -> new Item(new Item.Properties()));
 
 
 
